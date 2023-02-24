@@ -1,0 +1,647 @@
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(./fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(./fonts/Merriweather.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(./img/shopping-1165437.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #04862f;
+}
+
+header .logo {
+    position: relative;
+
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .nav li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header .nav li a {
+    color: aliceblue;
+}
+
+header .nav li a:hover {
+    color: rgb(248, 183, 43);
+}
+
+header .search {
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: beige;
+    background: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 0 10px 0 45px;
+}
+
+header .search input::placeholder {
+    color: #fff;
+}
+
+header .search ion-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #fff;
+    border-right: 1px solid #fff;
+
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: #18361b;
+    color: #fefae0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*SIGNUP FORM STARTS*/
+#container  {
+    position: relative;
+    height: 650px;
+    width: 550px;
+    top: 120px;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    background: rgba(253, 248, 176, 0.425);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.signup {
+    box-sizing: content-box;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin-left: -30px;
+    width: 300px;
+    height: 800px;
+    
+}
+
+.signup h1 {
+    font-size: 50px;
+    margin: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: Raleway-Bold;
+    word-spacing: 4px;
+}
+
+.signup .input {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.signup .in {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    border-bottom: 1.5px solid #050505;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.signup .in::placeholder {
+    color: transparent;
+}
+
+.signup .lab {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 0 4px;
+    color: #070707;
+    font-size: 14px;
+    font-weight: 800;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.signup .in:focus+.lab {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: 600;
+    color: #074117;
+}
+
+.signup .in:focus {
+    border-bottom: 3px solid #0B6623;
+}
+
+.signup .in:not(:placeholder-shown)+.lab {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.signup .button {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: none;
+    background-color: #0B6623;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.signup .button:hover {
+    background-color: navy;
+    transform: translateY(-2px);
+}
+
+.signup .link {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.signup .link a {
+    text-decoration: none;
+    color: rgb(19, 68, 4);
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.signup .link a:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: bolder;
+}
+
+/* SIGNUP FORM ENDS HERE*/
+
+/*LOGIN FORM BEGINS*/
+.container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    top: 120px;
+    bottom: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    background: rgba(253, 248, 176, 0.425);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.login {
+    box-sizing: content-box;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin-left: -30px;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login h1 {
+    font-size: 50px;
+    margin: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: Raleway-Bold;
+    word-spacing: 4px;
+}
+
+.login .input {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.login .in {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    border-bottom: 1.5px solid #050505;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.login .in::placeholder {
+    color: transparent;
+}
+
+.login .lab {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 0 4px;
+    color: #070707;
+    font-size: 14px;
+    font-weight: 800;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.login .in:focus+.lab {
+    top: -10px;
+    left: 3px;
+    z-index: 10;
+    font-size: 16px;
+    font-weight: 600;
+    color: #074117;
+}
+
+.login .in:focus {
+    border-bottom: 3px solid #0B6623;
+}
+
+.login .in:not(:placeholder-shown)+.lab {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login .button {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px 40px;
+    border: none;
+    background-color: #0B6623;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.but{
+    background-color: goldenrod;
+    border: none;
+    position: relative;
+    top:-20px;
+}
+.login .button:hover {
+    background-color: navy;
+    transform: translateY(-2px);
+}
+
+.login .link {
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.login .link a {
+    text-decoration: none;
+    color: rgb(12, 43, 3);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.login .link a:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: bolder;
+}
+
+/* LOGIN ENDS HERE*/
+
+
+
+/*footer css*/
+.footer {
+    position: relative;
+    left: 0;
+    top: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color: #04862f;
+    color: #dce4e0;
+    margin-top: 200px;
+}
+
+.holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 200px;
+    margin-top: 20px;
+}
+
+.col {
+    position: relative;
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+
+}
+
+.col h3 {
+    font-family: Raleway;
+    font-size: 18px;
+}
+
+.col ul {
+    list-style: none;
+}
+
+.col ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #e8bf83;
+    font-size: 16px;
+}
+
+.col ul li a:hover {
+    text-transform: uppercase;
+    color: #ea5B2a;
+}
+
+.col ul li a:visited {
+    color: purple;
+    font-style: italic;
+}
+
+.col ul li a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media screen and (width: 320px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        z-index: 10;
+        background-color: #04862f;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: rgba(6, 187, 60, 0.082);
+        box-shadow: -6px 5px 5px -3px rgba(107, 201, 144, 0.35);
+        -webkit-box-shadow: -6px 5px 5px -3px rgba(107, 201, 144, 0.35);
+        -moz-box-shadow: -6px 5px 5px -3px rgba(107, 201, 144, 0.35);
+    }
+
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 50px;
+        margin-top: 50px;
+    }
+
+    .content {
+        padding: 20px 30px 0 0;
+        margin: 20px;
+        margin-top: 25px;
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding-bottom: 50px;
+        row-gap: 10px;
+        column-gap: 30px;
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 150%;
+        background-color: #04862f;
+        color: #dce4e0;
+    }
+
+    .wrap {
+        width: 140%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (width: 375px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 125%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+        z-index: 10;
+        background-color: #04862f;
+    }
+
+    .wrap {
+        width: 125%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        padding-bottom: 100px;
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 125%;
+        background-color: #04862f;
+        color: #dce4e0;
+    }
+
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 20px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (width: 425px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        z-index: 10;
+        background-color: #04862f;
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 130%;
+        background-color: #04862f;
+        color: #dce4e0;
+    }
+
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 50px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width: 1024px) {
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        z-index: 10;
+        background-color: #04862f;
+    }
+}

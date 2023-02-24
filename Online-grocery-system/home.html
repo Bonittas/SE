@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Fruits</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="./home.html" class="logo"><img src="./img/logo.png"alt="logo" width="140px" height="100px"></a>
+        <!-- <div class="search">
+            <input type="text" name="" id="find" placeholder="Search Dairy product...." onkeyup="search()">
+            </div> -->
+           
+                
+                    <div class="search">
+                    <input type="text" name="" id="find" placeholder="Search Catagories...." onkeyup="search()">
+                    </div>
+                    <section id="#nav-links">
+                        <ul class="nav">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="../Login/login.html">Login</a></li>
+                           
+                        </ul>
+                       </section>
+                 
+                
+                </div></div></div>
+            <button type = "button" class = "navbar-toggler">
+                <!-- <i class = "fas fa-bars"></i> -->
+              </button>
+                <div class = "cart">
+                  <button type = "button" id = "cart-btn" >
+                    <i class = "fas fa-shopping-cart"></i>
+                    <span id = "cart-count-info"></span>
+                  </button>
+            
+                  <div class = "cart-container">
+                    <div class = "cart-list">
+                     
+                    </div>
+      
+                    <div class = "cart-total">
+                      <h3>Total: birr</h3>
+            
+                      <span id = "cart-total-value"></span>
+                      <button class="order" onclick="order()">Order</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </nav>
+            </header>
+
+        <main class="main">
+            <aside class="sidebar">
+                <nav class="sb-nav">
+                    <a href="./dairy.html" class="bar-item">Dairy</a>
+                    <a href="./fruit.html" class="bar-item">Fruits</a>
+                    <a href="./snacks.html" class="bar-item">Snacks</a>
+                    <a href="./beverages.html" class="bar-item">Beverages</a>
+                    <a href="./vegetables.html" class="bar-item">Vegetables</a>
+                    <a href="./meat&seafood.html" class="bar-item">Meat & Seafood</a>
+                    <a href="./soap&detergent.html" class="bar-item">Soap & Detergents</a>
+                </nav>
+            </aside>
+
+            <section class="content">
+                <section class="grid">
+                    <figure>
+                        <a href="./dairy.html">
+                            <img src="./img/dairy.png" alt="Dairy" width="200px" height="200px">
+                            <h3>Dairy</h3>
+                        </a>
+                    </figure>
+                </section>
+                 
+                <section class="grid">
+                    <figure>
+                        <a href="./fruit.html">
+                            <img src="./img/fruit.png" alt="Fruits" width="200px" height="200px">
+                            <h3>Fruits</h3>
+                        </a>
+                    </figure>
+                </section>
+
+                <section class="grid">
+                    <figure>
+                        <a href="./snacks.html">
+                            <img src="./img/snacks.png" alt="Snacks" width="200px" height="200px">
+                            <h3>Snacks</h3>
+                        </a>
+                    </figure>
+                </section>
+                <section class="grid">
+                    <figure>
+                        <a href="./beverages.html">
+                            <img src="./img/bev.png" alt="Beverages" width="200px" height="200px">
+                            <h3>Beverages</h3>
+                        </a>
+                    </figure>
+                </section>
+
+                <section class="grid">
+                    <figure>
+                        <a href="./vegetables.html">
+                            <img src="./img/veg.png" alt="Vegetables" width="200px" height="200px">
+                            <h3>Vegetables</h3>
+                        </a>
+                    </figure>
+                </section>
+                <section class="grid">
+                    <figure>
+                        <a href="./meat&seafood.html">
+                            <img src="./img/meat.png" alt="Meat and Seafood" width="200px" height="200px">
+                            <h3>Meat and Seafood</h3>
+                        </a>
+                    </figure>
+                </section>
+                <section class="grid">
+                    <figure>
+                        <a href="./soap&detergent.html">
+                            <img src="./img/soap.png" alt="Soap and Detergents" width="200px" height="200px">
+                            <h3>Soap and Detergents</h3>
+                        </a>
+                    </figure>
+                </section>
+            </section>
+            <script type="text/javascript">
+                function search() {
+                let filter = document.getElementById('find').value.toUpperCase();
+                let item = document.querySelectorAll('.grid');
+                let l = document.getElementsByTagName('h3');
+                for(var i = 0;i<=l.length;i++){
+                let a=item[i].getElementsByTagName('h3')[0];
+                let value=a.innerHTML || a.innerText || a.textContent;
+                if(value.toUpperCase().indexOf(filter) > -1) {
+                item[i].style.display="";
+                }
+                else
+                {
+                item[i].style.display="none";
+                }
+                }
+                }
+                
+                </script>
+        </main>
+
+        <section class="footer">
+            <footer class="holder">
+                <section class="col">
+                    <h3>Get to Know Us</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </section>
+
+                <section class="col">
+                    <h3>Site Links</h3>
+                    <ul>
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./fruit.html">Fruits</a></li>
+                        <li><a href="./snacks.html">Snacks</a></li>
+                        <li><a href="./beverages.html">Beverages</a></li>
+                        <li><a href="./vegetables.html">Vegetables</a></li>
+                        <li><a href="./meat&seafood.html">Meat & Seafood</a></li>
+                        <li><a href="./soap&detergent.html">Soap & Detergents</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </section>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+     <script src="home.js"></script>
+    </body>
+
+</html>

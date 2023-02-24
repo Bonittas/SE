@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <title>Meat & Seafood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Fruits</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="./home.html" class="logo"><img src="./img/logo.png"alt="logo" width="140px" height="100px"></a>
+        <!-- <div class="search">
+            <input type="text" name="" id="find" placeholder="Search Dairy product...." onkeyup="search()">
+            </div> -->
+           
+                
+                    <div class="search">
+                    <input type="text" name="" id="find" placeholder="Search Catagories...." onkeyup="search()">
+                    </div>
+                    <section id="#nav-links">
+                        <ul class="nav">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="../Sign up page/signup.html">Sign Up</a></li>
+                            <li><a href="../Login/login.html">Login</a></li>
+                           
+                        </ul>
+                       </section>
+                 
+                
+                </div></div></div>
+            <button type = "button" class = "navbar-toggler">
+                <!-- <i class = "fas fa-bars"></i> -->
+              </button>
+                <div class = "cart">
+                  <button type = "button" id = "cart-btn" >
+                    <i class = "fas fa-shopping-cart"></i>
+                    <span id = "cart-count-info"></span>
+                  </button>
+            
+                  <div class = "cart-container">
+                    <div class = "cart-list">
+                     
+                    </div>
+      
+                    <div class = "cart-total">
+                      <h3>Total: birr</h3>
+            
+                      <span id = "cart-total-value"></span>
+                      <button class="order" onclick="order()">Order</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </nav>
+            </header>
+
+
+    <section class="wrap">
+
+        <aside class="sidebar">
+            <nav class="sb-nav">
+                <a href="./dairy.html" class="bar-item">Dairy</a>
+                <a href="./fruit.html" class="bar-item">Fruits</a>
+                <a href="./snacks.html" class="bar-item">Snacks</a>
+                <a href="./beverages.html" class="bar-item">Beverages</a>
+                <a href="./vegetables.html" class="bar-item">Vegetables</a>
+                <a href="./meat&seafood.html" class="bar-item">Meat & Seafood</a>
+                <a href="./soap&detergent.html" class="bar-item">Soap & Detergents</a>
+            </nav>
+        </aside>
+
+        <section class="page">
+            <section class="page-title">
+                <h1>Meat and Seafood</h1>
+
+                <section class="crumbs" aria-label="breadcrumbs">
+                    <a href="./home.html">Home</a>
+                    <span>/</span>
+                    <a href="meat&seafood.html">Meat & Seafood</a>
+                </section>
+
+                <section class="main-wrap">
+                    <section class="products-grid">
+
+                        <section class="inner-grid" style="max-width: 10000px;">
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/egg.html"><img src="./img/eggs.png"
+                                        alt="Eggs" width="100px" height="100px"></a>
+                                <a class="product-title" href="./products page/egg.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">12 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Eggs</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/whole chicken.html"><img
+                                        src="./img/whole chicken.png" alt="Chicken Whole" width="130px"
+                                        height="100px"></a>
+                                <a class="product-title" href="./products page/whole chicken.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">500 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Whole Chicken</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/chicken breast.html"><img
+                                        src="./img/chicken breast.png" alt="Chicken Breast" width="120px"
+                                        height="100px"></a>
+                                <a class="product-title" href="./products page/chicken breast.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">200 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Chicken Breasts</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/chicken drumsticks.html"><img
+                                        src="./img/chicken drumsticks.png" alt="Chicken Drumsticks" width="120px"
+                                        height="100px"></a>
+                                <a class="product-title" href="./products page/chicken drumsticks.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">200 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Drumsticks</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/whole fish.html"><img
+                                        src="./img/whole fish.png" alt="Fish" width="130px" height="100px"></a>
+                                <a class="product-title" href="./products page/whole fish.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">80 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Unfilleted Fish</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/fish.html"><img
+                                        src="./img/filleted fish.png" alt="Filleted Fish" width="120px"
+                                        height="100px"></a>
+                                <a class="product-title" href="./products page/fish.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">120 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Filleted Fish</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="product-wrap">
+                                <a class="product-image" href="./products page/tuna.html"><img
+                                        src="./img/canned tuna.png" alt="Canned Tuna" width="120px" height="100px"></a>
+                                <a class="product-title" href="./products page/tuna.html" id="add-cart">
+                                    <div class="product-price">
+                                        <div class="product-amount">
+                                            <p class="item-price">100 Br</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner_title">Canned Tuna</div>
+                                </a>
+                                <div class="add-to-cart-button">
+                                    <div class="form-ctrl">
+                                        <button type="button">
+                                            <span class="button-text">Add to Cart</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+
+
+        </section>
+    </section>
+    <script type="text/javascript">
+        function search() {
+        let filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.product-wrap');
+        let l = document.getElementsByClassName('inner_title');
+        for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByClassName('inner_title')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+        if(value.toUpperCase().indexOf(filter) > -1) {
+        item[i].style.display="";
+        }
+        else
+        {
+        item[i].style.display="none";
+        }
+        }
+        }
+        
+        </script>
+
+    <section class="footer">
+        <footer class="holder">
+            <section class="col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </section>
+
+            <section class="col">
+                <h3>Site Links</h3>
+                <ul>
+                    <li><a href="./dairy.html">Dairy</a></li>
+                    <li><a href="./fruit.html">Fruits</a></li>
+                    <li><a href="./snacks.html">Snacks</a></li>
+                    <li><a href="./beverages.html">Beverages</a></li>
+                    <li><a href="./vegetables.html">Vegetables</a></li>
+                    <li><a href="./meat&seafood.html">Meat & Seafood</a></li>
+                    <li><a href="./soap&detergent.html">Soap & Detergents</a></li>
+                </ul>
+            </section>
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

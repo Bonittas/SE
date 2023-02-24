@@ -1,0 +1,40 @@
+[
+
+  {
+    "name": "",
+    "category": "Anchor Milk",
+    "price": "1000 birr",
+    "imgSrc": "./img/anchor powdered milk.png"
+  },
+  {
+    "name": "",
+    "category": "Shola Milk",
+    "price": "25 birr",
+    "imgSrc": "./img/shola milk.png"
+  },
+  {
+    "name" : "",
+    "category": "Butter",
+    "price": "50 birr",
+    "imgSrc": "./img/butter.png"
+  },
+  {
+    "name": "",
+    "category": "Cheese",
+    "price": "150 birr",
+    "imgSrc": "./img/mozerella.png"
+  },
+  {
+    "name": "",
+    "category": "Ayeb",
+    "price": "70 birr",
+    "imgSrc": "./img/soft cheese.png"
+  },
+  {
+    "name": "",
+    "category": "Yoghurt",
+    "price": "50 birr",
+    "imgSrc": "./img/yoghurt.png"
+  }
+
+]
