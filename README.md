@@ -1,1 +1,1 @@
-Online grocery system free from payment system
+Online grocery system without the payment system
